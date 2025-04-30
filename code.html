@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Template Binary Final</title>
+  <!-- Font Awesome untuk ikon sosial media -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pIVM+zOqH5+7W8eIq7N0m2N8pXp1kZ7Y2p8uTnRoY6tG3xlFnmH9V+eQ/Z6E8msjHGT6gXQz5YOJ7ReEyG4Eog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+    body {
+      background: #fff;
+    }
+    .banner {
+      background: #035a94;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+      position: relative;
+    }
+    .banner h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    .button {
+      display: inline-block;
+      background: transparent;
+      color: rgb(221, 209, 209);
+      padding: 10px 20px;
+      border: 2px solid \rgb(177, 164, 164);
+      text-decoration: none;
+      margin-top: 10px;
+    }
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #e4e0e0;
+      position: relative;
+    }
+    .content .text,
+    .content .image {
+      flex: 1;
+      min-width: 50%;
+      height: 400px;
+      padding: 40px;
+    }
+    .content .image {
+      background-size: cover;
+      background-position: center;
+    }
+    .white .text {
+      background: #f8f8f8;
+      color: #80128a;
+    }
+    .green .text {
+      background: rgb(28, 172, 112);
+      color: #fff;
+    }
+    .blue .text {
+      background: #035a94;
+      color: #fff;
+    }
+    .purple .text {
+      background: #80128a;
+      color: #f8f8f8;
+    }
+    .content.reverse {
+      flex-direction: row-reverse;
+    }
+    .content h2 {
+      margin-bottom: 15px;
+    }
+    /* Scroll-nav base */
+    .scroll-nav {
+      position: absolute;
+      top: 350px;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .scroll-nav.left {
+      left: 10px;
+      right: auto;
+    }
+    .scroll-nav.right {
+      right: 10px;
+      left: auto;
+    }
+    .scroll-nav a {
+      background: rgba(255, 255, 255, 0.5);
+      color: #333;
+      padding: 3px 6px;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+      font-size: 14px;
+      transition: background 0.2s;
+    }
+    .scroll-nav a:hover {
+      background: rgba(0, 0, 0, 0.3);
+      color: #fff;
+    }
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 30px 0;
+    }
+    footer ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+    footer a {
+      color: white;
+      text-decoration: none;
+      font-size: 24px;
+      transition: color 0.2s;
+    }
+    footer a:hover {
+      color: #ccc;
+    }
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="banner" id="section1">
+    <h1>Ini adalah Binary, template website gratis<br>dan responsif dari TEMPLATED</h1>
+    <a href="#section2" class="button">Lanjutkan</a>
+  </section>
+
+  <section class="content white" id="section2">
+    <div class="text">
+      <h2>Contoh teks bagian pertama</h2>
+      <p>Lorem ipsum dolor sit amet, praesent et lacus at nec leo lorem ipsum dolore.</p>
+      <a href="#" class="button">Selengkapnya</a>
+    </div>
+    <div class="image" style="background-image: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee');"></div>
+
+    <!-- NAV KIRI -->
+    <div class="scroll-nav left">
+      <a href="#section1">&#9650;</a>
+      <a href="#section3">&#9660;</a>
+    </div>
+    <!-- NAV KANAN -->
+    <div class="scroll-nav right">
+      <a href="#section1">&#9650;</a>
+      <a href="#section3">&#9660;</a>
+    </div>
+  </section>
+
+  <section class="content green reverse" id="section3">
+    <div class="text">
+      <h2>Bagian kedua yang menarik</h2>
+      <p>Praesent et lacus at neque bibendum sagittis. Nullam sagittis sapien a enim tempus.</p>
+      <a href="#" class="button">Selengkapnya</a>
+    </div>
+    <div class="image" style="background-image: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee');"></div>
+
+    <!-- NAV KIRI -->
+    <div class="scroll-nav left">
+      <a href="#section2">&#9650;</a>
+      <a href="#section4">&#9660;</a>
+    </div>
+    <!-- NAV KANAN -->
+    <div class="scroll-nav right">
+      <a href="#section2">&#9650;</a>
+      <a href="#section4">&#9660;</a>
+    </div>
+  </section>
+
+  <section class="content white" id="section4">
+    <div class="text">
+      <h2>Informasi tambahan di sini</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac sapien ut velit dapibus varius.</p>
+      <a href="#" class="button">Selengkapnya</a>
+    </div>
+    <div class="image" style="background-image: url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21');"></div>
+
+    <!-- NAV KIRI -->
+    <div class="scroll-nav left">
+      <a href="#section3">&#9650;</a>
+      <a href="#section5">&#9660;</a>
+    </div>
+    <!-- NAV KANAN -->
+    <div class="scroll-nav right">
+      <a href="#section3">&#9650;</a>
+      <a href="#section5">&#9660;</a>
+    </div>
+  </section>
+
+  <section class="content blue reverse" id="section5">
+    <div class="text">
+      <h2>Topik menarik lainnya</h2>
+      <p>Fusce eu velit et quam hendrerit efficitur. Integer sit amet arcu a felis luctus placerat.</p>
+      <a href="#" class="button">Selengkapnya</a>
+    </div>
+    <div class="image" style="background-image: url('https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb');"></div>
+
+    <!-- NAV KIRI -->
+    <div class="scroll-nav left">
+      <a href="#section4">&#9650;</a>
+      <a href="#section6">&#9660;</a>
+    </div>
+    <!-- NAV KANAN -->
+    <div class="scroll-nav right">
+      <a href="#section4">&#9650;</a>
+      <a href="#section6">&#9660;</a>
+    </div>
+  </section>
+
+  <section class="content white" id="section6">
+    <div class="text">
+      <h2>Bagian mendalam</h2>
+      <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+      <a href="#" class="button">Selengkapnya</a>
+    </div>
+    <div class="image" style="background-image: url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429');"></div>
+
+    <!-- NAV KIRI -->
+    <div class="scroll-nav left">
+      <a href="#section5">&#9650;</a>
+      <a href="#section7">&#9660;</a>
+    </div>
+    <!-- NAV KANAN -->
+    <div class="scroll-nav right">
+      <a href="#section5">&#9650;</a>
+      <a href="#section7">&#9660;</a>
+    </div>
+  </section>
+
+  <section class="content purple reverse" id="section7">
+    <div class="text">
+      <h2>Penutup dan Kesimpulan</h2>
+      <p>Integer vel augue non nisi eleifend laoreet. Suspendisse potenti. Donec in feugiat lorem.</p>
+      <a href="#" class="button">Selengkapnya</a>
+    </div>
+    <div class="image" style="background-image: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee');"></div>
+
+    <!-- NAV KIRI -->
+    <div class="scroll-nav left">
+      <a href="#section6">&#9650;</a>
+      <a href="#footer">&#9660;</a>
+    </div>
+    <!-- NAV KANAN -->
+    <div class="scroll-nav right">
+      <a href="#section6">&#9650;</a>
+      <a href="#footer">&#9660;</a>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <ul>
+      <li>
+        <a href="https://twitter.com/username" target="_blank" rel="noopener">
+          <img src="https://upload.wikimedia.org/wikipedia/en/6/60/Twitter_Logo_as_of_2021.svg" alt="Twitter" width="24" height="24">
+        </a>
+      </li>
+      <li>
+        <a href="https://facebook.com/username" target="_blank" rel="noopener">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" width="24" height="24">
+        </a>
+      </li>
+      <li>
+        <a href="https://instagram.com/username" target="_blank" rel="noopener">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="24" height="24">
+        </a>
+      </li>
+    </ul>
+    <p class="logo">Template Binary</p>
+  </footer>
+
+</body>
+</html>
